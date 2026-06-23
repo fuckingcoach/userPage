@@ -1,9 +1,4 @@
-hello
-
-feqfef
-qfqefq
-
-
-fqf
-
-fw
+git status
+git init
+git comit -m "註解"
+git push
