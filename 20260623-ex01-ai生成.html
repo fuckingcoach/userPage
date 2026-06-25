@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/my.css" />
+    <style>
+      /* 增加卡片懸停效果 */
+      .row {
+        transition: transform 0.3s ease;
+        padding: 20px;
+        border-radius: 15px;
+      }
+      .row:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+        transform: translateY(-5px);
+      }
+
+      /* 改善圖片框顯示 */
+      .imgbox {
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      /* 讓按鈕更具電競感 */
+      .btn-primary {
+        background-color: #007bff;
+        border: none;
+        transition: background 0.3s;
+      }
+      .btn-primary:hover {
+        background-color: #0056b3;
+        box-shadow: 0 0 10px #007bff;
+      }
+
+      .imgbox {
+        height: 220px;
+      }
+      .timeline-section {
+        position: relative;
+      }
+      .timeline-section::before {
+        position: absolute;
+        content: "";
+        top: 10px;
+        bottom: 0;
+        width: 4px;
+        background-color: dimgray;
+        left: 50%;
+        transform: translatex(-50%);
+      }
+      .timeline-section-pointer {
+        position: relative;
+      }
+      .timeline-section-pointer::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: azure;
+        top: 0;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 3px solid #000;
+      }
+      @media screen and (max-width: 768px) {
+        .timeline-section::before,
+        .timeline-section-pointer::before {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <header
+    class="jumbotron text-center py-5"
+    style="background: #111; color: #fff"
+  >
+    <h1>次世代電競主機旗艦展</h1>
+    <p class="lead">為遊戲而生，為效能定義。</p>
+  </header>
+  <body>
+    <div class="timeline-section">
+      <div class="row align-items-center timeline-section-pointer mb-5">
+        <div class="col-md-6">
+          <div
+            class="imgbox bg-cover"
+            style="background-image: url(&quot;images/pc-01.jpg&quot;)"
+          ></div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="textbook">
+            <div class="h2">極致效能系列</div>
+            <p>
+              頂級水冷系統搭配旗艦顯示卡，提供極致的 4K
+              遊戲體驗，適合追求頂尖效能的專業玩家。
+            </p>
+            <div class="h4 text-danger fw-bold">價格：$89,900</div>
+            <button class="btn btn-primary mt-2">立即購買</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row align-items-center flex-md-row-reverse timeline-section-pointer mb-5"
+      >
+        <div class="col-md-6">
+          <div
+            class="imgbox bg-cover"
+            style="background-image: url(&quot;images/pc-02.jpg&quot;)"
+          ></div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="textbook">
+            <div class="h2">主流競技系列</div>
+            <p>
+              專為電子競技設計，強大的多核處理器與高頻記憶體，確保高刷新率與流暢的操作反應。
+            </p>
+            <div class="h4 text-danger fw-bold">價格：$42,500</div>
+            <button class="btn btn-primary mt-2">立即購買</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center timeline-section-pointer mb-5">
+        <div class="col-md-6">
+          <div
+            class="imgbox bg-cover"
+            style="background-image: url(&quot;images/pc-03.jpg&quot;)"
+          ></div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="textbook">
+            <div class="h2">極簡生產力系列</div>
+            <p>
+              精巧機殼設計，強大的多工處理能力，是影音創作者與高效辦公環境的最佳硬體夥伴。
+            </p>
+            <div class="h4 text-danger fw-bold">價格：$35,900</div>
+            <button class="btn btn-primary mt-2">立即購買</button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="row align-items-center flex-md-row-reverse timeline-section-pointer mb-5"
+      >
+        <div class="col-md-6">
+          <div
+            class="imgbox bg-cover"
+            style="background-image: url(&quot;images/pc-04.jpg&quot;)"
+          ></div>
+        </div>
+        <div class="col-md-6 mt-3">
+          <div class="textbook">
+            <div class="h2">入門體驗系列</div>
+            <p>
+              最高 CP
+              值首選，滿足日常網遊與輕度影音剪輯，讓您輕鬆踏入電競的高品質世界。
+            </p>
+            <div class="h4 text-danger fw-bold">價格：$22,800</div>
+            <button class="btn btn-primary mt-2">立即購買</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer class="text-center py-4 bg-dark text-white">
+    <p>&copy; 2026 Gaming PC Store. All Rights Reserved.</p>
+  </footer>
+</html>
